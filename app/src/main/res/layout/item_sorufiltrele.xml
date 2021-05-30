@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/browser_actions_bg_grey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SORU : "></TextView>
+        <TextView
+            android:id="@+id/txtSoru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SORUNUZU YAZINIZ "></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A) "></TextView>
+        <TextView
+            android:id="@+id/txtCevap1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A ŞIKKI "></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B) "></TextView>
+        <TextView
+            android:id="@+id/txtCevap2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="B ŞIKKI "></TextView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C) "></TextView>
+        <TextView
+            android:id="@+id/txtCevap3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C ŞIKKI "></TextView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D) "></TextView>
+        <TextView
+            android:id="@+id/txtCevap4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="D ŞIKKI "></TextView>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

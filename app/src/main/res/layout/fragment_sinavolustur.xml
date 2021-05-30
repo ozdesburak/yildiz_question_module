@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.SoruekleFragment">
+
+    <LinearLayout
+        android:layout_width="30dp"
+        android:layout_margin="5dp"
+        android:layout_height="30dp">
+
+        <ImageView
+            android:id="@+id/btnBack1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/backbutton" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="SINAV OLUŞTUR"
+            android:textColor="@color/black"
+            android:textSize="22dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="SINAV SÜRESİ : "
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"></TextView>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editSinavSuresi1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="SORU PUANI : "
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"></TextView>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editSoruPuani1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="SINAV ZORLUK DÜZEYİNİ SEÇİN: "
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"></TextView>
+            <Spinner
+                android:id="@+id/spinnerzorlukseviyesi"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnFiltrele"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:text="LİSTELE"></Button>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RecyclerViewSoruFiltrele"
+            android:layout_width="match_parent"
+            android:scrollbarThumbVertical="@color/black"
+            android:fadeScrollbars="false"
+            android:scrollbarSize="3dp"
+            android:layout_height="300dp"></androidx.recyclerview.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/btnSinavOlustur"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:text="SINAV OLUŞTUR"></Button>
+
+    </LinearLayout>
+</LinearLayout>

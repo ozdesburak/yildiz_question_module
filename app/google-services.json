@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "764771075489",
+    "project_id": "yildizapp-dcff1",
+    "storage_bucket": "yildizapp-dcff1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764771075489:android:f613a2b9a0e5ab61b177e0",
+        "android_client_info": {
+          "package_name": "com.app.yildizuniapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "764771075489-ju5ram8p9klfama55ouofjkqqm270go5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADE4Rox1Hux4R9ewmx456ZpTPXmNtD1sk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "764771075489-ju5ram8p9klfama55ouofjkqqm270go5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

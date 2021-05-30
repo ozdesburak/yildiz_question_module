@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragments.LoginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+            <TextView
+                android:id="@+id/txtGirisYap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SİSTEME GİRİŞ"
+                android:textColor="@color/black"
+                android:textSize="25dp"></TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lblmail1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textColorHint="@color/black"
+            android:gravity="center_horizontal">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editemail1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/or_text_login"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                android:ems="10"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lblpassword1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textColorHint="@color/black"
+            android:gravity="center_horizontal">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editpassword1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:layout_below="@+id/or_text_login"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:hint="Şifre"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="GİRİŞ YAP"
+                android:textSize="20dp"></Button>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/black"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="100dp"
+                android:layout_height="1dp"></View>
+
+            <TextView
+                android:id="@+id/txtdonthaveaccount"
+                android:gravity="center"
+                android:clickable="true"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:text="Üye değil misin? Hemen Üye Ol"
+                android:layout_height="wrap_content"></TextView>
+
+
+    </LinearLayout>
+
+</FrameLayout>
